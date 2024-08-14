@@ -3,7 +3,7 @@ import { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import { Outlet } from '../components/outlet';
 
-const HomePage = lazy(() => import('../pages/home/Home'));
+const RenderPage = lazy(() => import('../pages/render/Render'));
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />
+        element: <RenderPage />
       }
     ]
   }
