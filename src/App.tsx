@@ -1,13 +1,13 @@
-import { Button } from './components/button/Button';
-import { TestImport } from './TestImport';
+import { ThemeProvider } from '@mui/material';
+import { theme } from './theme';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router';
 
 const App = () => {
   return (
-    <>
-      <div>Life Cycle</div>
-      <TestImport />
-      <Button />
-    </>
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   );
 };
 

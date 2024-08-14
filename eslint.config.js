@@ -9,8 +9,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default tseslint.config(
   {
-    extends: [js.configs.recommended,
-      ...tseslint.configs.recommended,]
+    extends: [js.configs.recommended, ...tseslint.configs.recommended]
   },
   {
     plugins: {
